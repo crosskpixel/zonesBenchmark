@@ -1,0 +1,10 @@
+gcloud functions deploy NAME --entry-point ENTRY-POINT --runtime RUNTIME TRIGGER [FLAGS...]
+
+
+params = https://cloud.google.com/sdk/gcloud/reference/functions/deploy?hl=pt-br
+
+regions = https://cloud.google.com/compute/docs/regions-zones?hl=pt_br
+
+
+gcloud functions deploy southamerica-east1 --entry-point helloHttp --runtime nodejs16 --trigger-http --allow-unauthenticated --region southamerica-east1 --memory 128MB
+

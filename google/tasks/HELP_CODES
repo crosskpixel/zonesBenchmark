@@ -1,0 +1,11 @@
+ 
+location = https://cloud.google.com/compute/docs/regions-zones?hl=pt_br without last `-`.
+
+
+ 1 - Create an queue
+        .gcloud tasks queues create QUEUE_ID --location=LOCATION_NAME
+    ex: .gcloud tasks queues create queue-southamerica-east1 --location=southamerica-east1
+
+ 2 - Check if OK
+    ex: gcloud tasks queues describe my-queue
+    ex: gcloud tasks queues describe queue-southamerica-east1 --location=southamerica-east1

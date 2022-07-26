@@ -1,0 +1,7 @@
+runtime: nodejs16
+
+env_variables:
+  QUEUE_NAME: "queue-southamerica-east1"
+  QUEUE_LOCATION: "southamerica-east1"
+  FUNCTION_URL: "https://southamerica-east1-zones-355620.cloudfunctions.net/southamerica-east1"
+  SERVICE_ACCOUNT_EMAIL: "creator-cloud-tasks@zones-355620.iam.gserviceaccount.com"
