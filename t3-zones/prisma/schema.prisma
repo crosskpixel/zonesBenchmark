@@ -67,3 +67,19 @@ model region {
   lambda String
   id     Int     @id @default(autoincrement())
 }
+
+model serviceregion {
+  serviceid BigInt
+  regionid  BigInt
+  active    Boolean
+  id        Int     @id(map: "service_region_pkey") @default(autoincrement())
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model serviceregionlog {
+  serviceregionid BigInt
+  ms              Int
+  status_code     Int
+
+  @@ignore
+}
