@@ -60,3 +60,10 @@ model Service {
   name String
   url  String
 }
+
+model region {
+  region String
+  active Boolean
+  lambda String
+  id     Int     @id @default(autoincrement())
+}

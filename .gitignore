@@ -34,3 +34,6 @@ zones-benchmark/yarn-error.log*
 zones-benchmark/.pnpm-debug.log*
 zones-benchmark/.env*.local
 zones-benchmark/.vercel
+
+
+tools/node_modules
